@@ -1,0 +1,28 @@
+.page-header {
+    position: fixed;
+    z-index: 10;
+    background-color: #F4F4F4;
+    box-shadow: 6px 6px 16px 3px rgba(209, 205, 199, 0.5);
+    box-shadow: -6px -6px 16px 0 rgba(255, 255, 255, 0.5);
+}
+.page-header__menu {
+    
+}
+.mainmenu {
+}
+.mainmenu__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainmenu__item a {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+}
+.mainmenu__item a:hover {
+    color: #3D9550;
+}
+.mainmenu__item_current-page a {
+    color: #3D9550;
+}
