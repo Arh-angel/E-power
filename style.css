@@ -33,11 +33,14 @@ a, a:visited{
 	text-decoration: none;
 	color: black;
 }
-a:hover{text-decoration: none;}
+a:hover {
+	text-decoration: none;
+	color: #3D9550;
+}
 ul li{list-style: none;}
 img{vertical-align: top;}
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6 {
 	font-size:50px;
 	font-weight: 400;
 }
@@ -82,10 +85,6 @@ h1,h2,h3,h4,h5,h6{
 .mainmenu__item a {
     font-size: 20px;
     font-weight: 400;
-    color: #000000;
-}
-.mainmenu__item a:hover {
-    color: #3D9550;
 }
 .mainmenu__item_current-page a {
     color: #3D9550;
