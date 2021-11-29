@@ -1,0 +1,53 @@
+.page-section__safety-regulations {
+    background-color: var(--color-white);
+}
+.page-section__safety-regulations-title-accordion {
+    max-width: 650px;
+    margin-right: 40px;
+    flex-shrink: 0;
+}
+.page-section__safety-regulations-title {
+    margin-top: 157px;
+    margin-bottom: 73px;
+    letter-spacing: -1%;
+}
+.page-section__safety-regulations-accordion {
+}
+.page-section__safety-regulations-accordion-element {
+    margin-bottom: 30px;
+    border: 2px solid var(--color-green);
+}
+.page-section__safety-regulations-accordion-element.is-open .page-section__safety-regulations-accordion-element-text {
+    display: block;
+}
+.page-section__safety-regulations-accordion-element.is-open .page-section__safety-regulations-btn {
+    transform: rotate(45deg);
+}
+.page-section__safety-regulations-accordion-element:last-child {
+    margin-bottom: 112px;
+}
+.page-section__safety-regulations-accordion-element-title-open-close-icon {
+}
+.page-section__safety-regulations-accordion-element-title {
+    max-width: 575px;
+    padding: 14px 0 14px 27px;
+    font-size: 24px;
+}
+.page-section__safety-regulations-btn {
+    margin-right: 10px;
+    transition: transform 0.2s linear;
+}
+.page-section__safety-regulations-accordion-element-text {
+    display: none;
+    max-width: 570px;
+    margin-left: 27px;
+    margin-bottom: 14px;
+    font-size: 16px;
+    line-height: 150%;
+}
+.page-section__safety-regulations-accordion-img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    margin-bottom: 150px;
+}
