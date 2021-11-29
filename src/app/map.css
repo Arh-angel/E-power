@@ -1,0 +1,133 @@
+.map {
+    background-color: #F0F9F2;
+    margin-top: 80px;
+}
+
+.map-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 150px;
+    padding-top: 150px;
+}
+
+/* search */
+
+.search {
+    padding: 87px 28px;
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.1);
+}
+
+.search__title {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.search__input {
+    display: block;
+    height: 60px;
+    width: 100%;
+    border: 2px solid #3D9550;
+    padding: 16px 0 16px 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.search__select {
+    display: block;
+    height: 60px;
+    width: 100%;
+    padding: 16px 0 16px 20px;
+    border: 2px solid #3D9550;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.search__select:last-child {
+    margin-bottom: 0;
+}
+
+/* Found */
+
+.found {
+    width: 750px;
+    background-color: #fff;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.1);
+    padding: 10px 25px;
+}
+
+.found__title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.found-card__toggle-icon {
+    background: url(../../images/icons/cross.svg) no-repeat center center;
+    height: 25px;
+    width: 25px;
+}
+
+.found-card {
+    border: 2px solid #3D9550;
+}
+
+.found-card__content-list {
+    margin: 0 30px 30px 30px;
+}
+
+.found-list__item {
+    margin-bottom: 20px;
+}
+
+.found-card__toggle {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.found-card__toggle.is-open .found-card__toggle-icon {
+    transform: rotate(45deg);
+    transition: all 0.6s ease;
+}
+
+.found-card__toggle-icon {
+    transition: all 0.6s ease;
+}
+
+.found-card.is-open .found-card__content {
+    transition: 0.6s ease-out;
+    max-height: none;
+}
+
+.found-card__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-out;
+}
+
+.found-card__content-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.found-card__content-item-icon {
+    margin-right: 14px;
+}
+
+.found-card__content-item-text {
+    font-size: 20px;
+}
+
+
+.map-item {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.map-item iframe {
+    width: 100%;
+}
