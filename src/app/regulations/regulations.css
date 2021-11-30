@@ -1,0 +1,185 @@
+/*========================================page-section__safety-regulations=================================*/
+
+.page-section__safety-regulations {
+    position: relative;
+    background-color: var(--color-white);
+}
+.page-section__safety-regulations-title-accordion {
+    max-width: 650px;
+    margin-right: 40px;
+    flex-shrink: 0;
+}
+.page-section__safety-regulations-title {
+    margin-top: 150px;
+    margin-bottom: 73px;
+    letter-spacing: -1%;
+}
+.page-section__safety-regulations-accordion {
+}
+.page-section__safety-regulations-accordion-element {
+    margin-bottom: 30px;
+    border: 2px solid var(--color-green);
+}
+.page-section__safety-regulations-accordion-element.is-open .page-section__safety-regulations-accordion-element-text {
+    display: block;
+}
+.page-section__safety-regulations-accordion-element.is-open .page-section__safety-regulations-btn {
+    transform: rotate(45deg);
+}
+.page-section__safety-regulations-accordion-element:last-child {
+    margin-bottom: 70px;
+}
+.page-section__safety-regulations-accordion-element-title-open-close-icon {
+}
+.page-section__safety-regulations-accordion-element-title {
+    max-width: 575px;
+    padding: 14px 0 14px 27px;
+    font-size: 24px;
+}
+.page-section__safety-regulations-btn {
+    margin-right: 10px;
+    transition: transform 0.2s linear;
+}
+.page-section__safety-regulations-accordion-element-text {
+    display: none;
+    max-width: 570px;
+    margin-left: 27px;
+    margin-bottom: 14px;
+    font-size: 16px;
+    line-height: 150%;
+}
+.page-section__safety-regulations-accordion-img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    margin-bottom: 150px;
+}
+.page-section__safety-regulations-ellipse-one {
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+}
+
+/*==========================================page-section__type-stations====================================*/
+
+.page-section__type-stations {
+    background-color: var(--color-light-green);
+}
+.type-stations-position {
+    position: relative;
+}
+.page-section__type-stations-title {
+    padding-top: 70px;
+    margin-bottom: 89px;
+}
+.page-section__type-stations-list {
+    padding-bottom: 70px;
+}
+.page-section__type-stations-item {
+}
+.page-section__type-stations-item p {
+    font-size: 26px;
+}
+.page-section__type-stations-img {
+    margin-bottom: 16px;
+}
+.page-section__type-stations-item-title {
+    margin-bottom: 16px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.page-section__type-stations-description {
+    margin-bottom: 16px;
+    width: 600px;
+}
+.page-section__type-stations-reservation {
+    width: 600px;
+}
+.page-section__type-stations-ellipse-two {
+    position: absolute;
+    bottom: -100px;
+    right: -125px;
+}
+
+/*==============================================page-section__price========================================*/
+
+.page-section__price {
+}
+.page-section__price-title {
+    margin-top: 70px;
+    margin-bottom: 35px;
+}
+.page-section__price-img-list {
+}
+.page-section__price-img {
+    position: relative;
+    margin-bottom: 70px;
+}
+.page-section__price-img-ellipse {
+    position: absolute;
+    z-index: -1;
+    bottom: -50px;
+    right: -50px;
+}
+.page-section__price-list {
+    max-width: 600px;
+}
+.page-section__price-item {
+    margin-bottom: 50px;
+}
+.page-section__price-item:last-child {
+    margin-bottom: 0;
+}
+.page-section__price-item p {
+    font-size: 26px;
+}
+.page-section__price-item p:last-child {
+    margin-top: 20px;
+}
+.page-section__price-item-title {
+    padding-top: 16px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.page-section__price-item-title span {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.page-section__price-item-description {
+}
+.page-section__price-item-payment {
+}
+
+/*=========================================page-section__client-card=======================================*/
+
+.page-section__client-card {
+    background-color: var(--color-light-green);
+}
+.client-card-position {
+    position: relative;
+}
+.page-section__client-card-title {
+    padding-top: 70px;
+    margin-bottom: 70px;
+}
+.page-section__client-card-text-form {
+}
+.page-section__client-card-text {
+    max-width: 642px;
+}
+.page-section__client-card-text p {
+    margin-bottom: 30px;
+}
+.page-section__client-card-text p:last-child {
+    margin-bottom: 70px;
+}
+.page-section__client-card-ellipse-one {
+    position: absolute;
+    left: -285px;
+    top: 200px;
+}
+.page-section__client-card-ellipse-two img {
+    position: absolute;
+    bottom: -60px;
+    right: -50px;
+}
