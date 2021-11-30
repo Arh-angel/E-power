@@ -41,3 +41,24 @@
 
 
 
+/*  */
+
+.found-list__item-link {
+    display: block;
+    cursor: pointer;
+    border: 2px solid var(--color-green);
+    padding: 20px 20px 20px 27px;
+    font-size: 22px;
+}
+
+.found-list__item-link-title {
+    margin-bottom: 30px;
+}
+
+.found-list__item {
+    margin-bottom: 20px;
+}
+
+.found-list__item:last-child {
+    margin-bottom: 0;
+}
