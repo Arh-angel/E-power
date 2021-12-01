@@ -21,7 +21,8 @@
     border: 2px solid var(--color-green);
 }
 .page-section__safety-regulations-accordion-element.is-open .page-section__safety-regulations-accordion-element-text {
-    display: block;
+    max-height: 180px;
+    margin-bottom: 14px;
 }
 .page-section__safety-regulations-accordion-element.is-open .page-section__safety-regulations-btn {
     transform: rotate(45deg);
@@ -41,12 +42,14 @@
     transition: transform 0.2s linear;
 }
 .page-section__safety-regulations-accordion-element-text {
-    display: none;
+    max-height: 0;
     max-width: 570px;
     margin-left: 27px;
-    margin-bottom: 14px;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 150%;
+    overflow: hidden;
+    transition: max-height 0.2s linear;
 }
 .page-section__safety-regulations-accordion-img {
     display: block;
@@ -168,6 +171,7 @@
     max-width: 642px;
 }
 .page-section__client-card-text p {
+    line-height: 120%;
     margin-bottom: 30px;
 }
 .page-section__client-card-text p:last-child {
