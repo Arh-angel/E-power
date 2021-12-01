@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap"
     rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css"/>
@@ -18,10 +18,10 @@
         <nav class="page-header__menu mainmenu">
         <ul class="mainmenu__list">
             <li class="mainmenu__item">
-            <a href="#!">КАК ПОЛЬЗОВАТЬСЯ</a>
+            <a href="src/app/regulations/regulations.html">КАК ПОЛЬЗОВАТЬСЯ</a>
             </li>
             <li class="mainmenu__item">
-                <a href="#!">КАРТА СТАНЦИЙ</a>
+                <a href="src/app/map/map.html">КАРТА СТАНЦИЙ</a>
             </li>
             <li class="mainmenu__item logo">
             <a href="#!">
@@ -40,19 +40,123 @@
     </header>
     <main class="page-main">
         <section class="page-section__main-banner">
-            Основной банер
+            <div class="container df-sb">
+                <div class="page-section__main-banner-title-btn">
+                    <h1 class="page-section__main-banner-title">В<span> БУДУЩЕЕ</span></h1>
+                    <p class="page-section__main-banner-sub-title">с новыми технологиями</p>
+                    <p class="page-section__main-banner-text">Сеть электрозаправочных станций E-power </p>
+                    <button class="btn main-banner-btn">КАРТА ПОСТОЯННОГО КЛИЕНТА</button>
+                </div>
+                <div class="page-section__main-banner-img">
+                    <img
+                        src="./images/home/main-banner.png"
+                        alt="main-banner"
+                    />
+                </div>
+            </div>
         </section>
         <section class="page-section__usage">
-            как использовать
+            <img class="page-section__usage-ellipse-one" src="./images/home/ellipse-one.png" alt="">
+            <div class="container">
+                <h2 class="page-section__usage-title">КАК ПОЛЬЗОВАТЬСЯ </h2>
+                <div class="page-section__usage-instruction">
+                    <ul class="page-section__usage-instruction-list">
+                        <li class="page-section__usage-instruction-item">
+                            <div class="page-section__usage-instruction-img">
+                                <img src="./images/home/connectors.png" alt="" srcset="">
+                            </div>
+                            <ol class="page-section__usage-instruction-text page-section__usage-instruction-text-one-item">
+                                <li>Выберите тип подключения</li>
+                            </ol>
+                        </li>
+                        <li class="page-section__usage-instruction-item-arrow">
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0L6 6.97839L12 0H0Z" fill="#3D9550"/>
+                            </svg>
+                        </li>
+                        <li class="page-section__usage-instruction-item">
+                            <div class="page-section__usage-instruction-img">
+                                <img src="./images/home/connection.png" alt="" srcset="">                             
+                            </div>
+                            <ol class="page-section__usage-instruction-text page-section__usage-instruction-text-one-item">
+                                <li>Вставьте кабель в электромобиль</li>
+                            </ol>
+                        </li>
+                        <li class="page-section__usage-instruction-item-arrow">
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0L6 6.97839L12 0H0Z" fill="#3D9550"/>
+                            </svg>
+                        </li>
+                        <li class="page-section__usage-instruction-item">
+                            <div class="page-section__usage-instruction-img">
+                                <img src="./images/home/button-start.png" alt="" srcset="">                                        
+                            </div>
+                            <ol class="page-section__usage-instruction-text">
+                                <li>Нажмите START</li>
+                                <li>Приложите картук считывающему устройству</li>
+                                <li>Начало зарядки</li>
+                            </ol>
+                        </li>
+                        <li class="page-section__usage-instruction-item">
+                            <div class="page-section__usage-instruction-img">
+                                <img src="./images/home/button-stop.png" alt="" srcset="">                                        
+                            </div>
+                            <ol class="page-section__usage-instruction-text">
+                                <li>Приложите картук считывающему устройству</li>
+                                <li>Нажмите STOP</li>
+                            </ol>
+                        </li>
+                        <li class="page-section__usage-instruction-item-arrow page-section__usage-instruction-item-arrow-center">
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0L6 6.97839L12 0H0Z" fill="#3D9550"/>
+                            </svg>
+                        </li>
+                        <li class="page-section__usage-instruction-item">
+                            <div class="page-section__usage-instruction-img">
+                                <img src="./images/home/disconnection.png" alt="" srcset="">                                        
+                            </div>
+                            <ol class="page-section__usage-instruction-text">
+                                <li>Достаньте кабельиз электромобиля</li>
+                                <li>Верните кабельв стационарное положение</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img class="page-section__usage-ellipse-two" src="./images/home/ellipse-two.png" alt="">
         </section>
         <section class="page-section__service">
-            сервисная служба
+            <div class="container df-sb">
+                <div class="page-section__service-img">
+                    <img src="./images/home/service-img.png" alt="">
+                </div>
+                <div class="page-section__service-about">
+                    <h2 class="page-section__service-title">СЕРВИСНАЯ СЛУЖБА</h2>
+                    <p class="page-section__service-text">Наша компания заботится о качестве предоставляемых услуг и стремится  всячески помогать нашим клиентам</p>
+                    <p class="page-section__service-text">При возникновение вопросов вы можете обратиться на нашу горячую линию</p>
+                    <p class="page-section__service-text-contact">ГРАФИК РАБОТЫ: 24/7</p> 
+                    <p class="page-section__service-text-contact">НОМЕР ТЕЛЕФОНА: 88006665556</p>
+                    <img src="./images/home/ellipse-three.png" alt="">
+                </div>
+            </div>
         </section>
         <section class="page-section__about-company">
-            О компании
+            <div class="container df-sb">
+                <div class="page-section__about-company-title-text">
+                    <h2 class="page-section__about-company-title">О КОМПАНИИ</h2>
+                    <p class="page-section__about-company-text">Компания E-power на рынке с 2020 года.</p>
+                    <p class="page-section__about-company-text">Мы  дорожим каждым нашим клиентом, поэтому высокое качество сервиса - приоритет для нас.  Команда профессионалов следит за постоянной работой наших станций, что бы Вам было комфортно путешествовать по территории России и стран ближнего зарубежья.</p>
+                    <p class="page-section__about-company-text">Мы работаем более чем с 120 городами России и стран СНГ.</p>
+                    <p class="page-section__about-company-text">География установленных нами станций ежегодно расширяется. <a href="#!">Подробнее...</a></p>
+                </div>
+                <div class="page-section__about-company-img">
+                    <img src="./images/home/about-company.png" alt="">
+                </div>
+            </div>
         </section>
         <section class="page-section__map">
-            Карта
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2212.2082058760234!2d44.01726931585229!3d56.32623738071062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4151d444ea6427b1%3A0xf73d96135d7dcaae!2z0YPQuy4g0JzQuNC90LjQvdCwLCAxNSwg0J3QuNC20L3QuNC5INCd0L7QstCz0L7RgNC-0LQsINCd0LjQttC10LPQvtGA0L7QtNGB0LrQsNGPINC-0LHQuy4sIDYwMzAwNQ!5e0!3m2!1sru!2sru!4v1638207921932!5m2!1sru!2sru" width="1920px" height="800" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
         </section>
     </main>
     <footer class="page-footer">
@@ -62,11 +166,11 @@
                     <a href="#!">ИНФОРМАЦИЯ О ЗАЩИТЕ ПРАВ </a>
                 </li>
                 <li class="page-footer__information-item">
-                    <a href="#!">ВАКАНСИИ</a>
+                    <a href="src/app/vacancies/vacancies.html">ВАКАНСИИ</a>
                 </li>
             </ul>
             <div class="logo">
-                <a href="#!">
+                <a href="index.html">
                     <img src="./images/E-power__logo.png" alt="logo">
                 </a>
             </div>
