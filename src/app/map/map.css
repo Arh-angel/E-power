@@ -99,7 +99,7 @@
 }
 
 .found-card__toggle-icon {
-    background: url(../../images/icons/cross.svg) no-repeat center center;
+    background: url(../../../images/icons/cross.svg) no-repeat center center;
     height: 25px;
     width: 25px;
 }
