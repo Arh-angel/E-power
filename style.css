@@ -424,7 +424,53 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /*adaptive*/
-
+@media (max-width:1300px) {
+	.container {
+		width: 1140px;
+	}
+	.logo {
+		padding: 28px 90px;
+	}
+	.logo a {
+		display: flex;
+		align-items: center;
+	}
+	.logo img {
+		width: 200px;
+	}
+	.mainmenu__item {
+		display: flex;
+		align-items: center;
+	}
+	.mainmenu__item a {
+		font-size: 18px;
+	}
+}
+@media (max-width:1160px) {
+	.container {
+		width: 972px;
+	}
+	.logo {
+		padding: 24px 70px;
+	}
+	.logo img {
+		width: 160px;
+	}
+	.mainmenu__item a {
+		font-size: 16px;
+	}
+}
+@media (max-width:992px) {
+	.container {
+		width: 747px;
+	}
+	.logo {
+		padding: 20px 20px;
+	}
+	.mainmenu__item a {
+		font-size: 14px;
+	}
+}
 @media (max-width:767px) {
 	.page-header {
 		position: fixed;
