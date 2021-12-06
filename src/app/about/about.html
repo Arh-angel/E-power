@@ -16,102 +16,169 @@
     <header class="page-header">
         <div class="container">
             <nav class="page-header__menu mainmenu">
-            <ul class="mainmenu__list">
-                <li class="mainmenu__item">
-                <a href="../regulations/regulations.html">КАК ПОЛЬЗОВАТЬСЯ</a>
-                </li>
-                <li class="mainmenu__item  mainmenu__item_current-page">
-                    <a href="./map.html">КАРТА СТАНЦИЙ</a>
-                </li>
-                <li class="mainmenu__item logo">
-                <a href="../../../index.html">
+                <a class="logo-mobile" href="../../../index.html">
                     <img src="../../../images/E-power__logo.png" alt="logo" />
                 </a>
-                </li>
-                <li class="mainmenu__item">
-                    <a href="#!">СЕРВИСНАЯ СЛУЖБА</a>
-                </li>
-                <li class="mainmenu__item">
-                    <a href="#!">О КОМПАНИИ</a>
-                </li>
-            </ul>
+                <ul class="mainmenu__list">
+                    <li class="mainmenu__item">
+                        <a href="../regulations/regulations.html">КАК ПОЛЬЗОВАТЬСЯ</a>
+                    </li>
+                    <li class="mainmenu__item">
+                        <a href="../map/map.html">КАРТА СТАНЦИЙ</a>
+                    </li>
+                    <li class="mainmenu__item logo">
+                        <a href="./index.html">
+                            <img src="../../../images/E-power__logo.png" alt="logo" />
+                        </a>
+                    </li>
+                    <li class="mainmenu__item">
+                        <a href="#!">СЕРВИСНАЯ СЛУЖБА</a>
+                    </li>
+                    <li class="mainmenu__item">
+                        <a href="#!">О КОМПАНИИ</a>
+                    </li>
+                </ul>
+                <div class="header__burger" onclick="toggelClass()">
+                <span></span>
+                </div>
             </nav>
         </div>
-        </header>
-        <!--  company-main  -->
-        <section class="company-main">
-            <div class="container company-main__wrap">
-                <div class="company-main__mission">
+      </header>
+      <div class="about">
+        <!--  section-company  -->
+        <section class="section-company">
+            <div class="container section-company__wrap">
+                <div class="section-company__mission">
                     <p><span>Миссия</span> нашей компании - создать доступную, безопасную и экологичную сеть электрозаправок по всей России, параллельно решая ключевые проблемы всей отрасли: небольшой запас хода и скорость зарядки электромобилей.</p>
                 </div>
-                <div class="company-main__poster">
+                <div class="section-company__poster">
                     <img src="../../../images/about/about_main.png" alt="Картинка о компании">
                 </div>
             </div>
         </section>
-        <section class="company-about">
-            <div class="company-about__ellipses">
-                <img class="big" src="../../../images/about/Ellipse_big.png" alt="">
-                <img class="small-up" src="../../../images/about/Ellipse_small.png" alt="">
-                <img class="small-down" src="../../../images/about/Ellipse_small.png" alt="">
-            </div>
-            <div class="container company-about__wrap">
-                <div class="company-about__text">
-                    <h1>О НАС</h1>
+        <!--  page-about  -->
+        <section class="section-about">
+            <div class="section-about__wrap container">
+                <div class="section-about__ellipses">
+                    <img class="big" src="../../../images/about/Ellipse_big.png" alt="">
+                    <img class="small-up" src="../../../images/about/Ellipse_small.png" alt="">
+                    <img class="small-down" src="../../../images/about/Ellipse_small.png" alt="">
+                </div>
+                <div class="section-about__content">
+                    <h1 class="section-about__title">О НАС</h1>
                     <p>Мы активно сотрудничаем с мировыми компаниями-производителями электрокаров, и развиваем этот вид транспорта как более удобную и дешевую альтернативу современным бензиновым автомобилям.</p>
                     <p>Мы призваны помочь развитию экологичного электротранспорта, создавая необходимую инфраструктуру. При этом наши услуги существенно ниже по стоимости и выше по экологичности и безопасности.</p>
                     <p>Наша задача - обеспечить людям доступ к качественной услуге в сфере заправки и сервису электрокаров, а так же помочь миру стать чище.</p>
                 </div>
-            </div>
+            </div>    
         </section>
-        <section class="company-pluses">
-            <div class="container company-pluses__wrap">
-                <h2>НАШИ ПРЕИМУЩЕСТВА</h2>
-                <div class="pluses-grid">
-                    <div class="company-pluses_content"><img src="../../../images/about/google-maps.png" alt=""><span>Доступность</span><br>Заправки во всех районах города</div>
-                    <div class="company-pluses_content"><img src="../../../images/about/charging-station.png" alt=""><span>Быстрая зарядка</span><br>Быстрая зарядка за 15 минут</div>
-                    <div class="company-pluses_content"><img src="../../../images/about/time.png" alt=""><span>Режим работы</span><br>Работаем круглосуточно</div>
-                    <div class="company-pluses_content"><img src="../../../images/about/help.png" alt=""><span>Помощь</span><br>Оперативная зарядка в случае разрядки аккумулятора в дороге</div>
-                    <div class="company-pluses_content"><img src="../../../images/about/booking.png" alt=""><span>Бронирование</span><br>Возможность бронирования места и времени заправки</div>
-                    <div class="company-pluses_content"><img src="../../../images/about/cost.png" alt=""><span>Низкая стоимость</span><br>Выгода очевидна: 100км = 25 кВт/ч = 100₽ </div>
+        <!--  section-pluses  -->
+        <section class="section-pluses">
+            <div class="container section-pluses__wrap">
+                <h2 class="section-pluses__title">НАШИ ПРЕИМУЩЕСТВА</h2>
+                <div class="section-pluses__grid">
+                    <div class="section-pluses__content">
+                        <div class="section-pluses__content-title">
+                            <img src="../../../images/about/google-maps.png" alt="">
+                            <p>Доступность</p>
+                        </div>
+                        <div class="section-pluses__content-text">
+                            <p>Заправки во всех районах города</p>
+                        </div>
+                    </div>
+                    <div class="section-pluses__content">
+                        <div class="section-pluses__content-title">
+                            <img src="../../../images/about/charging-station.png" alt="">
+                            <p>Быстрая зарядка</p>
+                        </div>
+                        <div class="section-pluses__content-text">
+                            <p>Быстрая зарядка за 15 минут</p>
+                        </div>
+                    </div>
+                    <div class="section-pluses__content">
+                        <div class="section-pluses__content-title">
+                            <img src="../../../images/about/time.png" alt="">
+                            <p>Режим работы</p>
+                        </div>
+                        <div class="section-pluses__content-text">
+                            <p>Работаем круглосуточно</p>
+                        </div>
+                    </div>
+                    <div class="section-pluses__content">
+                        <div class="section-pluses__content-title">
+                            <img src="../../../images/about/help.png" alt="">
+                            <p>Помощь</p>
+                        </div>
+                        <div class="section-pluses__content-text">
+                            <p>Оперативная зарядка в случае разрядки аккумулятора в дороге</p>
+                        </div>
+                    </div>
+                    <div class="section-pluses__content">
+                        <div class="section-pluses__content-title">
+                            <img src="../../../images/about/booking.png" alt="">
+                            <p>Бронирование</p>
+                        </div>
+                        <div class="section-pluses__content-text">
+                            <p>Возможность бронирования места и времени заправки</p>
+                        </div>
+                    </div>
+                    <div class="section-pluses__content">
+                        <div class="section-pluses__content-title">
+                            <img src="../../../images/about/cost.png" alt="">
+                            <p>Низкая стоимость</p>
+                        </div>
+                        <div class="section-pluses__content-text">
+                            <p>Выгода очевидна:100км = 25 кВт/ч = 100₽</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="company-contacts">
-         <div class="company-contacts__info">
-            <h3>КОНТАКТЫ</h3> 
-            <p>ОТДЕЛ ПО РАБОТЕ С КЛИЕНТАМИ:
-                88009003232</p>
-            <p>СЕРВИСНАЯ СЛУЖБА:
-                88006660055</p>
-            <p>EMAIL:
-                e-power@gmail.com</p>
-            <p>Получить консультацию по вопросам выбора, приобретения и точной стоимости можно, связавшись с нами по телефонам:
-                8000000000, +79999999
-                или оставив заявку на сайте</p>
-         </div>   
-         <form class="form">
-            <div class="contact-form__field df-jc-start">
-              <input class="input-field" type="text" placeholder="ИМЯ">
+        <!--  section-faq  -->
+        <section class="section-company-faq">
+            <div class="section-company-faq__wrap container">
+                <div class="section-company-faq__content">
+                    <img class="small-up" src="../../../images/about/Ellipse_small.png" alt="">
+                    <h3 class="section-company-faq__title">
+                        КОНТАКТЫ
+                    </h3>
+                    <p class="section-company-faq__text">
+                        ОТДЕЛ ПО РАБОТЕ С КЛИЕНТАМИ: 88009003232
+                    </p>
+                    <p class="section-company-faq__text">
+                        СЕРВИСНАЯ СЛУЖБА: 88006660055
+                    </p>
+                    <p class="section-company-faq__text">
+                        EMAIL: e-power@gmail.com
+                    </p>
+                    <p class="section-company-faq__text">
+                        Получить консультацию по вопросам выбора, приобретения и точной стоимости можно, связавшись с нами по телефонам: 8000000000, +79999999 или оставив заявку на сайте
+                    </p>
+                </div>
+                <form class="form section-company-faq__form">
+                    <div class="contact-form__field df-jc-start">
+                        <input class="input-field" type="text" placeholder="ИМЯ">
+                    </div>
+                    <div class="contact-form__field df-jc-start">
+                        <input class="input-field" type="text" placeholder="ФАМИЛИЯ">
+                    </div>
+                    <div class="contact-form__field df-jc-start">
+                        <input class="input-field" type="email" placeholder="EMAIL">
+                    </div>
+                    <div class="contact-form__field df-jc-start">
+                        <input class="input-field" type="tel" placeholder="ТЕЛЕФОН">
+                    </div>
+                    <div class="contact-form__footer df-sb">
+                        <button class="btn" type="submit">ОТПРАВИТЬ</button>
+                        <label class="contact-form__terms checkbox df-sb">
+                            <input type="checkbox" class="checkbox__input" checked>
+                            <span class="checkbox__text">СОГЛАСИЕ НА ОБРАБОТКУ ДАННЫХ</span>
+                        </label>
+                    </div>
+                </form>
             </div>
-            <div class="contact-form__field df-jc-start">
-              <input class="input-field" type="text" placeholder="ФАМИЛИЯ">
-            </div>
-            <div class="contact-form__field df-jc-start">
-              <input class="input-field" type="email" placeholder="EMAIL">
-            </div>
-            <div class="contact-form__field df-jc-start">
-              <input class="input-field" type="tel" placeholder="ТЕЛЕФОН">
-            </div>
-              <div class="contact-form__footer df-sb">
-                  <button class="btn" type="submit">ОТПРАВИТЬ</button>
-                  <label class="contact-form__terms checkbox df-sb">
-                    <input type="checkbox" class="checkbox__input" checked>
-                    <span class="checkbox__text">СОГЛАСИЕ НА ОБРАБОТКУ ДАННЫХ</span>
-                  </label>
-              </div>
-          </form>
         </section>
+    </div>
         <footer class="page-footer">
             <div class="container df-sb">
                 <ul class="page-footer__information-list df-sb">
@@ -161,5 +228,6 @@
                 </div>
             </div>
         </footer>
+        <script src="../../../script.js"></script>
 </body>
 </html>

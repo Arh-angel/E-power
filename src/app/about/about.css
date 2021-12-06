@@ -15,10 +15,10 @@
 .section-company__poster::before {
 	content: '';
 	position: absolute;
-	top: 10%;
+	top: 20%;
     width: 35%;
     height: 80%;
-    background: linear-gradient(90deg, rgba(255,255,255, 0.3) 0%, rgba(242,245,247,0.03) 80%);
+    background: linear-gradient(80deg, rgba(255,255,255, 0.3) 0%, rgba(242,245,247,0.03) 70%);
 }
 
 .section-company__poster img {
@@ -33,7 +33,7 @@
 
 .section-company__mission {
 	width: 640px;
-	padding: 37px 25px 25px 63px;
+	padding: 25px 25px 25px 40px;
 	position: absolute;
 	top: 300px;
 	z-index: 3;
@@ -71,7 +71,7 @@
 
 .section-about__title {
 	font-size: 20px;
-	Line-height: 27px;
+	line-height: 27px;
     font-weight: 600;
 	padding-top: 85px;
 	padding-bottom: 28px;
@@ -80,11 +80,9 @@
 .section-about__content p {
 	padding-bottom: 20px;
 	padding-right: 210px;
-	Line-height: 27px;
-	/* text-indent: 10px;  */
-}
-
-/* Я бы убрал бы отступ начала текста text-ident, но решай сама) */
+	line-height: 27px;
+	font-size: 20px;
+	}
 
 .section-about__content p:last-child {
 	padding-bottom: 93px;
@@ -130,7 +128,7 @@ top: 15px;
 
 .section-pluses__content {
 	background-color: var(--color-green);
-	color: #ffff;
+	color: var(--color-white);
 	border-radius: 4px;
 }
 
@@ -207,4 +205,5 @@ top: 15px;
 	padding-right: 80px;
 	font-size: 16px;
 	margin-bottom: 0;
+
 }
