@@ -1,4 +1,5 @@
-
+/* ========================================================================================== */
+/* vacancies-main */
 .vacancies-main {
     padding-top: 80px;
 }
@@ -13,6 +14,7 @@
     max-width: 1920px;
 }
 
+/* ========================================================================================= */
 /* vacancies */
 
 .vacancies {
@@ -43,6 +45,103 @@
     margin-bottom: 20px;
 }
 
-.found-list__item:last-child {
-    margin-bottom: 0;
+
+/* =============================================================================================== */
+/* ADAPTIVE */
+
+/* media 1300px */
+
+@media (max-width:1300px) {
+    .vacancies-main {
+        padding-top: 73px;
+    }
+
+    .found-list__item-link {
+        font-size: 19px;
+    }
+}
+
+/* media 1160px */
+
+@media (max-width:1160px) {
+    .vacancies-main {
+        padding-top: 62px;
+    }
+    .found-list__item-link {
+        font-size: 16px;
+        padding: 15px 15px 15px 20px;
+    }
+    .vacancies-main__poster img {
+        max-width: 1160px;
+    }
+}
+
+/* media 992px */
+
+@media (max-width:992px) {
+    .vacancies-main {
+        padding-top: 57px;
+    }
+    .vacancies-wrap {
+        flex-direction: column;
+        padding: 15px 15px 15px;
+    }
+    .vacancies-main__poster img {
+        max-width: 992px;
+    }
+}
+
+/* media 767px */
+
+@media (max-width:767px) {
+    .vacancies-main {
+        padding-top: 48px;
+    }
+    .found-list__item-link {
+        font-size: 13px;
+    }
+    .vacancies-main__poster img {
+        max-width: 767px;
+    }
+}
+
+/* media 590px */
+
+@media (max-width:590px) {
+    .found-list__item-link {
+        font-size: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+/* media 490px */
+
+@media (max-width:490px) {
+    .found-list__item-link-title {
+        margin-bottom: 20px;
+    }
+    .vacancies-main__poster img {
+        max-width: 600px;
+    }
+}
+
+/* media 400px */
+
+@media (max-width:400px) {
+    .found-list__item-link-title {
+        margin-bottom: 15px;
+    }
+    .found-list__item-link {
+        font-size: 10px;
+    }
+}
+
+/* media 347px */
+@media (max-width:347px) {
+    .found-list__item-link {
+        font-size: 8px;
+    }
 }

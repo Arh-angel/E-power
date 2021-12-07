@@ -1,3 +1,4 @@
+/* map */
 .map {
     background-color: var(--color-light-green);
     margin-top: 80px;
@@ -10,6 +11,7 @@
     padding-top: 150px;
 }
 
+/* =========================================================================== */
 /* search */
 
 .search {
@@ -39,6 +41,7 @@
     background-color: var(--color-light-green);
 }
 
+/* =========================================================================== */
 /* select */
 
 .search-select {
@@ -72,7 +75,7 @@
     pointer-events: none;
 }
 
-
+/* =========================================================================== */
 /* Found */
 
 .found {
@@ -147,7 +150,6 @@
     font-size: 20px;
 }
 
-
 .map-google {
     margin: 0 auto;
     width: 100%;
@@ -156,4 +158,245 @@
 .map-google iframe {
     display: block;
     width: 100%;
+}
+
+
+/* =========================================================================== */
+/* media 1300px */
+
+@media (max-width:1300px) {
+    .map {
+        margin-top: 76px;
+    }
+
+    .search {
+        width: 400px;
+    }
+
+    .found {
+        width: 700px;
+    }
+}
+
+/* =========================================================================== */
+/* media 1160px */
+
+@media (max-width:1160px) {
+
+    .map {
+        margin-top: 65px;
+    }
+
+    .search {
+        width: 350px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .search__title {
+        font-size: 17px;
+    }
+
+    .search__input {
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .search-select {
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .search-select__wrap::after {
+        top: 38px;
+    }
+
+    .found {
+        width: 610px;
+    }
+
+    .found__title {
+        font-size: 26px;
+    }
+
+    .found-card__toggle {
+        padding: 23px 20px 18px;
+        font-size: 18px;
+    }
+}
+
+/* =========================================================================== */
+/* media 992px */
+
+@media (max-width:992px) {
+    .map {
+        margin-top: 55px;
+    }
+
+    .map-wrapper {
+        flex-direction: column;
+        padding: 15px 15px 15px;
+    }
+
+    .search {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .found {
+        width: 100%;
+    }
+}
+
+/* =========================================================================== */
+/* media 767 */
+
+@media (max-width:767px) {
+    .map {
+        margin-top: 50px;
+    }
+}
+
+/* =========================================================================== */
+/* media 590 */
+
+@media (max-width:590px) {
+
+    .search-select {
+        font-size: 13px;
+    }
+
+    .search__title {
+        font-size: 14px;
+    }
+
+    .search__input {
+        font-size: 13px;
+    }
+
+    .found-card__toggle {
+        font-size: 12px;
+    }
+
+    .found-card__content-item-text {
+        font-size: 12px;
+    }
+
+    .found-card__toggle-icon {
+        height: 15px;
+        width: 15px;
+    }
+
+    .found__title {
+        font-size: 20px;
+    }
+}
+
+/* =========================================================================== */
+/* media 437 */
+
+@media (max-width:437px) {
+
+    .search-select {
+        font-size: 10px;
+    }
+
+    .search__title {
+        font-size: 12px;
+    }
+
+    .search__input {
+        font-size: 10px;
+    }
+
+    .found-card__toggle {
+        font-size: 10px;
+    }
+
+    .found-card__content-item-text {
+        font-size: 10px;
+    }
+
+    .found-card__toggle-icon {
+        height: 12px;
+        width: 12px;
+    }
+
+    .found__title {
+        font-size: 15px;
+    }
+}
+
+/* =========================================================================== */
+/* media 379 */
+
+@media (max-width:379px) {
+
+    .search {
+        padding-top: 25px;
+    }
+
+    .search-select {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 40px;
+    }
+
+    .search-select__wrap::after {
+        top: 27px;
+        right: 14px;
+    }
+
+    .search__input {
+        height: 40px;
+        margin-bottom: 11px;
+        margin-top: 10px;
+    }
+
+    .found-card__toggle {
+        padding: 17px 5px 14px;
+        font-size: 9px;
+    }
+
+    .found-card__content-item-text {
+        font-size: 9px;
+    }
+}
+
+/* =========================================================================== */
+/* media 330 */
+
+@media (max-width:330px) {
+
+    .search {
+        padding-top: 25px;
+    }
+
+    .search-select {
+        height: 35px;
+        font-size: 9px;
+    }
+
+    .search__input {
+        height: 35px;
+        font-size: 9px;
+    }
+
+    .search-select__wrap::after {
+        top: 25px;
+    }
+
+    .found-card__toggle {
+        padding: 17px 5px 14px;
+        font-size: 8px;
+    }
+
+    .found-card__content-item-text {
+        font-size: 7px;
+    }
+
+    .found-card__content-item-icon {
+        width: 9px;
+        height: 8px;
+        margin-right: 7px;
+    }
 }
