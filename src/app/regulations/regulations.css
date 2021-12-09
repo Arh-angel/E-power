@@ -5,37 +5,38 @@
     background-color: var(--color-white);
 }
 .page-section__safety-regulations-title-accordion {
-    max-width: 650px;
-    margin-right: 40px;
+    max-width: calc(320px + (650 - 320) * ((100vw - 320px) / (1920 - 320)));
+    margin-right: calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320)));
     flex-shrink: 0;
 }
 .page-section__safety-regulations-title {
-    margin-top: 150px;
-    margin-bottom: 73px;
-    letter-spacing: -1%;
+    margin-top: calc(70px + (150 - 70) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: calc(20px + (73 - 20) * ((100vw - 320px) / (1920 - 320)));
 }
 .page-section__safety-regulations-accordion {
 }
 .page-section__safety-regulations-accordion-element {
-    margin-bottom: 30px;
+    margin-bottom: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
     border: 2px solid var(--color-green);
 }
 .page-section__safety-regulations-accordion-element.is-open .page-section__safety-regulations-accordion-element-text {
-    max-height: 180px;
-    margin-bottom: 14px;
+    max-height: 210px;
+    margin-bottom: calc(10px + (14 - 10) * ((100vw - 320px) / (1920 - 320)));
 }
 .page-section__safety-regulations-accordion-element.is-open .page-section__safety-regulations-btn {
     transform: rotate(45deg);
 }
 .page-section__safety-regulations-accordion-element:last-child {
-    margin-bottom: 70px;
+    margin-bottom: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
 }
 .page-section__safety-regulations-accordion-element-title-open-close-icon {
 }
 .page-section__safety-regulations-accordion-element-title {
-    max-width: 575px;
-    padding: 14px 0 14px 27px;
-    font-size: 24px;
+    max-width: calc(230px + (575 - 230) * ((100vw - 320px) / (1920 - 320)));
+    padding-top: calc(10px + (14 - 10) * ((100vw - 320px) / (1920 - 320)));
+    padding-bottom: calc(10px + (14 - 10) * ((100vw - 320px) / (1920 - 320)));
+    padding-left: calc(10px + (27 - 10) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
 }
 .page-section__safety-regulations-btn {
     margin-right: 10px;
@@ -43,23 +44,30 @@
 }
 .page-section__safety-regulations-accordion-element-text {
     max-height: 0;
-    max-width: 570px;
-    margin-left: 27px;
+    max-width: calc(250px + (570 - 250) * ((100vw - 320px) / (1920 - 320)));
+    margin-left: calc(10px + (27 - 10) * ((100vw - 320px) / (1920 - 320)));
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
     line-height: 150%;
     overflow: hidden;
     transition: max-height 0.2s linear;
+}
+.page-section__safety-regulations-accordion-img-mobile {
+    display: none;
 }
 .page-section__safety-regulations-accordion-img {
     display: block;
     max-width: 100%;
     height: 100%;
-    margin-bottom: 150px;
+    margin-bottom: calc(20px + (150 - 20) * ((100vw - 320px) / (1920 - 320)));
+}
+.page-section__safety-regulations-accordion-img img {
+    display: block;
+    width: calc(300px + (1217 - 300) * ((100vw - 320px) / (1920 - 320)));
 }
 .page-section__safety-regulations-ellipse-one {
     position: absolute;
-    bottom: -150px;
+    bottom: calc(-270px + (-150 - -270) * ((100vw - 320px) / (1920 - 320)));
     left: 0;
 }
 
@@ -72,31 +80,40 @@
     position: relative;
 }
 .page-section__type-stations-title {
-    padding-top: 70px;
-    margin-bottom: 89px;
+    padding-top: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: calc(20px + (89 - 20) * ((100vw - 320px) / (1920 - 320)));
 }
 .page-section__type-stations-list {
-    padding-bottom: 70px;
+    padding-bottom: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
+}
+.page-section__type-stations-list:last-child {
+    margin-right: 0;
 }
 .page-section__type-stations-item {
+    width: 48%;
 }
 .page-section__type-stations-item p {
-    font-size: 26px;
+    font-size: calc(16px + (26 - 16) * ((100vw - 320px) / (1920 - 320)));
 }
 .page-section__type-stations-img {
-    margin-bottom: 16px;
+    width: 100%;
+    margin-bottom: calc(10px + (16 - 10) * ((100vw - 320px) / (1920 - 320)));
+}
+.page-section__type-stations-img img {
+    display: block;
+    width: 100%;
 }
 .page-section__type-stations-item-title {
-    margin-bottom: 16px;
+    margin-bottom: calc(10px + (16 - 10) * ((100vw - 320px) / (1920 - 320)));
     font-size: 30px;
     font-weight: 600;
 }
 .page-section__type-stations-description {
-    margin-bottom: 16px;
-    width: 600px;
+    margin-bottom: calc(10px + (16 - 10) * ((100vw - 320px) / (1920 - 320)));
+    width: 100%;
 }
 .page-section__type-stations-reservation {
-    width: 600px;
+    width: 100%;
 }
 .page-section__type-stations-ellipse-two {
     position: absolute;
@@ -109,39 +126,45 @@
 .page-section__price {
 }
 .page-section__price-title {
-    margin-top: 70px;
-    margin-bottom: 35px;
+    margin-top: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: calc(20px + (35 - 20) * ((100vw - 320px) / (1920 - 320)));
 }
 .page-section__price-img-list {
 }
 .page-section__price-img {
     position: relative;
-    margin-bottom: 70px;
+    width: 48%;
+    margin-bottom: calc(10px + (70 - 10) * ((100vw - 320px) / (1920 - 320)));
+}
+.page-section__price-img-main-img {
+    display: block;
+    width: 100%;
 }
 .page-section__price-img-ellipse {
     position: absolute;
+    width: 137px;
     z-index: -1;
     bottom: -50px;
     right: -50px;
 }
 .page-section__price-list {
-    max-width: 600px;
+    max-width: calc(300px + (600 - 300) * ((100vw - 320px) / (1920 - 320)));
 }
 .page-section__price-item {
-    margin-bottom: 50px;
+    margin-bottom: calc(10px + (50 - 10) * ((100vw - 320px) / (1920 - 320)));;
 }
 .page-section__price-item:last-child {
     margin-bottom: 0;
 }
 .page-section__price-item p {
-    font-size: 26px;
+    font-size: calc(14px + (30 - 14) * ((100vw - 320px) / (1920 - 320)));
 }
 .page-section__price-item p:last-child {
-    margin-top: 20px;
+    margin-top: calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
 }
 .page-section__price-item-title {
     padding-top: 16px;
-    font-size: 30px;
+    font-size: calc(16px + (30 - 16) * ((100vw - 320px) / (1920 - 320)));
     margin-bottom: 20px;
 }
 .page-section__price-item-title span {
@@ -162,20 +185,20 @@
     position: relative;
 }
 .page-section__client-card-title {
-    padding-top: 70px;
-    margin-bottom: 70px;
+    padding-top: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
 }
 .page-section__client-card-text-form {
 }
 .page-section__client-card-text {
-    max-width: 642px;
+    max-width: calc(300px + (642 - 300) * ((100vw - 320px) / (1920 - 320)));
 }
 .page-section__client-card-text p {
     line-height: 120%;
-    margin-bottom: 30px;
+    margin-bottom: calc(10px + (30 - 10) * ((100vw - 320px) / (1920 - 320)));
 }
 .page-section__client-card-text p:last-child {
-    margin-bottom: 70px;
+    margin-bottom: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
 }
 .page-section__client-card-ellipse-one {
     position: absolute;
@@ -185,5 +208,157 @@
 .page-section__client-card-ellipse-two img {
     position: absolute;
     bottom: -60px;
-    right: -50px;
+    right: -240px;
+}
+
+/*adaptive*/
+@media (max-width: 1300px) {
+    
+}
+@media (max-width: 1160px) {
+
+}
+@media (max-width: 992px) {
+    
+    /*page-section__price*/
+    .page-section__price-img-list {
+        flex-direction: column;
+    }
+    .page-section__price-img {
+        width: 100%;
+    }
+    .page-section__price-img-ellipse {
+        bottom: -285px;
+        right: 100px;
+    }
+    .page-section__price-list {
+        max-width: calc(767px + (992 - 767) * ((100vw - 320px) / (992 - 320)));
+        margin-bottom: 20px;
+    }
+    .page-section__price-item-title {
+        padding-top: 10px;
+        font-size: calc(16px + (30 - 16) * ((100vw - 320px) / (992 - 320)));
+        margin-bottom: 20px;
+    }
+    .page-section__price-item p {
+        font-size: calc(14px + (25 - 14) * ((100vw - 320px) / (992 - 320)));
+        margin-top: 5px;
+    }
+
+    /*page-section__client-card*/
+    .page-section__client-card-text-form {
+        flex-direction: column;
+    }
+    .contact-form__footer {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .btn {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .page-section__client-card-ellipse-two img {
+        right: -121px;
+    }
+}
+@media (max-width: 767px) {
+    /*page-section__safety-regulations*/
+    .page-section__safety-regulations-mobile-container {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    .page-section__safety-regulations-title-accordion {
+        width: 100%;
+        max-width: calc(320px + (767 - 320) * ((100vw - 320px) / (767 - 320)));
+        margin-right: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /* .page-section__safety-regulations-accordion-img-mobile {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .page-section__safety-regulations-accordion-img-mobile img {
+        display: block;
+        width: 100%;
+    } */
+    /* .page-section__safety-regulations-accordion-img {
+        display: none;
+    } */
+    .page-section__safety-regulations-title {
+        margin-top: 20px;
+    }
+    .page-section__safety-regulations-accordion-element-title {
+        max-width: calc(230px + (650 - 230) * ((100vw - 320px) / (767 - 320)));
+    }
+    .page-section__safety-regulations-accordion-element-text {
+        max-width: calc(230px + (600 - 230) * ((100vw - 320px) / (767 - 320)));
+    }
+    .page-section__safety-regulations-ellipse-one {
+        display: none;
+    }
+
+    /*page-section__type-stations*/
+    .type-stations-position {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .page-section__type-stations-list {
+        flex-direction: column;
+    }
+    .page-section__type-stations-item {
+        width: 100%;
+    }
+    .page-section__type-stations-img {
+        margin-right: 0;
+    }
+    .page-section__type-stations-reservation {
+        padding-bottom: 20px;
+    }
+
+    /*page-section__price*/
+    .page-section__price {
+        padding: 0 20px;
+    }
+    .page-section__price-img-ellipse {
+        display: none;
+    }
+    .page-section__price-list {
+        max-width: calc(300px + (767 - 300) * ((100vw - 320px) / (767 - 320)));
+    }
+    .page-section__price-item-title {
+        padding-top: 10px;
+        font-size: calc(16px + (30 - 16) * ((100vw - 320px) / (767 - 320)));
+        margin-bottom: 20px;
+    }
+    .page-section__price-item p {
+        font-size: calc(14px + (25 - 14) * ((100vw - 320px) / (767 - 320)));
+        margin-top: 5px;
+    }
+    /*page-section__client-card*/
+
+    .page-section__client-card {
+        padding: 0 20px;
+    }
+    .page-section__client-card-text {
+        max-width: calc(320px + (767 - 320) * ((100vw - 320px) / (767 - 320)));
+    }
+    .form {
+        width: 100%;
+    }
+    .contact-form__field {
+        width: 100%;
+    }
+    .input-field {
+        width: 100%;
+    }
+    .btn {
+        width: 100%;
+        margin-right: 0;
+    } 
+    .contact-form__terms {
+        width: 100%;
+    }
 }
