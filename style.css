@@ -128,6 +128,10 @@ h6 {
   display: flex;
   align-items: center;
 }
+.df-jc-end {
+  display: flex;
+  justify-content: flex-end;
+}
 /*open-close-btn*/
 
 .open-close-btn {
@@ -144,22 +148,24 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 610px;
-  height: 420px;
-  margin-bottom: 70px;
+  width: calc(280px + (610 - 280) * ((100vw - 320px) / (1920 - 320)));
+  height: 100%;
+  margin-bottom: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
+  padding: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
   z-index: 1;
   background-color: var(--color-white);
   box-shadow: 1px 2px 6px 1px rgb(0 0 0 / 10%);
 }
 .form:first-child {
-  margin-top: 30px;
+  margin-top: calc(10px + (30 - 10) * ((100vw - 320px) / (1920 - 320)));
 }
 .form:last-child {
-  margin-bottom: 30px;
+  margin-bottom: calc(10px + (30 - 10) * ((100vw - 320px) / (1920 - 320)));
 }
 .btn {
-  width: 268px;
+  width: 50%;
   height: 60px;
+  margin-right: calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
   font-size: 16px;
   font-weight: 600;
   background-color: var(--color-green);
@@ -174,7 +180,7 @@ h6 {
   color: var(--color-black);
   line-height: 28px;
   padding: 15px 20px;
-  width: 536px;
+  width: calc(260px + (536 - 260) * ((100vw - 320px) / (1920 - 320)));
   margin-bottom: 15px;
   transition: background-color 0.25s ease;
 }
@@ -191,14 +197,13 @@ h6 {
   width: 1px;
   height: 1px;
   padding-left: 20px;
-  padding: 0;
   margin: -1px;
   overflow: hidden;
   white-space: nowrap;
   border: 0;
 }
 .contact-form__footer {
-  width: 536px;
+  width: calc(260px + (536 - 260) * ((100vw - 320px) / (1920 - 320)));
 }
 .checkbox__input:checked + .checkbox__text::before {
   background: var(--color-white) url("images/icons/check.svg") no-repeat center
@@ -207,12 +212,15 @@ h6 {
 .checkbox__input:focus-visible + .checkbox__text::before {
   outline: 1px solid var(--color-green);
 }
+.contact-form__terms {
+  width: 50%;
+}
 .checkbox__text {
   padding-left: 27px;
   display: block;
   position: relative;
-  width: 235px;
-  font-size: 16px;
+  width: 100%;
+  font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320)));
 }
 .checkbox__text::before {
   content: "";
