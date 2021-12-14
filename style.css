@@ -156,12 +156,12 @@ h6 {
   background-color: var(--color-white);
   box-shadow: 1px 2px 6px 1px rgb(0 0 0 / 10%);
 }
-.form:first-child {
+/* .form:first-child {
   margin-top: calc(10px + (30 - 10) * ((100vw - 320px) / (1920 - 320)));
-}
-.form:last-child {
+} */
+/* .form:last-child {
   margin-bottom: calc(10px + (30 - 10) * ((100vw - 320px) / (1920 - 320)));
-}
+} */
 .btn {
   width: 50%;
   height: 60px;
