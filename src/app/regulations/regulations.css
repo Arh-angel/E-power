@@ -129,7 +129,9 @@
     margin-top: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
     margin-bottom: calc(20px + (35 - 20) * ((100vw - 320px) / (1920 - 320)));
 }
-.page-section__price-img-list {
+.page-section__price-list {
+    margin-left: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
 }
 .page-section__price-img {
     position: relative;
@@ -192,6 +194,7 @@
 }
 .page-section__client-card-text {
     max-width: calc(300px + (642 - 300) * ((100vw - 320px) / (1920 - 320)));
+    margin-right: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
 }
 .page-section__client-card-text p {
     line-height: 120%;
@@ -220,9 +223,14 @@
 }
 @media (max-width: 992px) {
     
+    .form {
+        width: 100%;
+    }
+
     /*page-section__price*/
     .page-section__price-img-list {
         flex-direction: column;
+        align-items: flex-start;
     }
     .page-section__price-img {
         width: 100%;
@@ -233,7 +241,7 @@
     }
     .page-section__price-list {
         max-width: calc(767px + (992 - 767) * ((100vw - 320px) / (992 - 320)));
-        margin-bottom: 20px;
+        margin-left: 0;
     }
     .page-section__price-item-title {
         padding-top: 10px;
@@ -249,17 +257,11 @@
     .page-section__client-card-text-form {
         flex-direction: column;
     }
-    .contact-form__footer {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-    }
-    .btn {
-        width: 100%;
-        margin-bottom: 20px;
-    }
     .page-section__client-card-ellipse-two img {
         right: -121px;
+    }
+    .page-section__client-card-text {
+        width: 100%;
     }
 }
 @media (max-width: 767px) {
@@ -275,18 +277,6 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-    /* .page-section__safety-regulations-accordion-img-mobile {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-    .page-section__safety-regulations-accordion-img-mobile img {
-        display: block;
-        width: 100%;
-    } */
-    /* .page-section__safety-regulations-accordion-img {
-        display: none;
-    } */
     .page-section__safety-regulations-title {
         margin-top: 20px;
     }
@@ -344,21 +334,5 @@
     }
     .page-section__client-card-text {
         max-width: calc(320px + (767 - 320) * ((100vw - 320px) / (767 - 320)));
-    }
-    .form {
-        width: 100%;
-    }
-    .contact-form__field {
-        width: 100%;
-    }
-    .input-field {
-        width: 100%;
-    }
-    .btn {
-        width: 100%;
-        margin-right: 0;
-    } 
-    .contact-form__terms {
-        width: 100%;
     }
 }
