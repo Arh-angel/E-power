@@ -309,12 +309,12 @@ h6 {
   overflow: hidden;
 }
 .page-section__main-banner-title-btn {
-  max-width: 50%;
+  width: 50%;
   margin-right: 20px;
   flex-shrink: 0;
 }
 .page-section__main-banner-title {
-  font-size: calc(40px + (98 - 40) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(28px + (98 - 28) * ((100vw - 320px) / (1920 - 320)));
   font-weight: 800;
   letter-spacing: 0.05em;
   line-height: 63%;
@@ -324,13 +324,13 @@ h6 {
   color: var(--color-green);
 }
 .page-section__main-banner-sub-title {
-  font-size: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(15px + (50 - 15) * ((100vw - 320px) / (1920 - 320)));
   font-weight: 600;
   margin-bottom: calc(40px + (85 - 40) * ((100vw - 320px) / (1920 - 320)));
 }
 .page-section__main-banner-text {
   display: inline-block;
-  width: 100%;
+  width: 390px;
   margin-bottom: 30px;
 }
 .main-banner-btn {
@@ -448,8 +448,8 @@ h6 {
 .page-section__service-ellipse-three {
   position: absolute;
   width: calc(0px + (200 - 0) * ((100vw - 320px) / (1920 - 320)));
-  right: calc(-252px + (85 - -252) * ((100vw - 320px) / (1920 - 320)));
-  bottom: calc(-300px + (0 - -300) * ((100vw - 320px) / (1920 - 320)));
+  right: -100px;
+  bottom: -100px;
 }
 
 /*=========================================page-section__about-company=====================================*/
@@ -549,7 +549,7 @@ h6 {
   }
   /*main-banner*/
   .page-section__main-banner-text {
-    width: 430px;
+    width: 350px;
   }
   .main-banner-btn {
     width: 300px;
@@ -587,7 +587,7 @@ h6 {
   }
   /*main-banner*/
   .page-section__main-banner-text {
-    width: 350px;
+    width: 330px;
     margin-bottom: 20px;
   }
   .main-banner-btn {
@@ -738,21 +738,25 @@ h6 {
     display: none;
   }
    /*main-banner*/
+   .page-section__main-banner {
+     padding: 0 20px;
+   }
    .page-section__container-main-banner-mobile {
 	   flex-direction: column-reverse;
+     align-items: flex-start;
    }
    .page-section__main-banner-title-btn {
-    max-width: 767px;
-	padding: 0 20px;
-	margin-bottom: calc(20px + (40 - 20) * ((100vw - 320px) / (767 - 320)));
+    width: 100%;
+	  margin-bottom: calc(20px + (40 - 20) * ((100vw - 320px) / (767 - 320)));
+    margin-right: 0;
   }
   .page-section__main-banner-title {
-    font-size: calc(42px + (100 - 42) * ((100vw - 320px) / (767 - 320)));
-	margin-top: calc(20px + (40 - 20) * ((100vw - 320px) / (767 - 320)));
+    font-size: calc(40px + (100 - 40) * ((100vw - 320px) / (767 - 320)));
+	  margin-top: calc(20px + (40 - 20) * ((100vw - 320px) / (767 - 320)));
     margin-bottom: calc(20px + (40 - 20) * ((100vw - 320px) / (767 - 320)));
   }
   .page-section__main-banner-sub-title {
-    font-size: calc(22px + (40 - 22) * ((100vw - 320px) / (767 - 320)));
+    font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (767 - 320)));
     margin-bottom: calc(40px + (80 - 40) * ((100vw - 320px) / (767 - 320)));
   }
   .page-section__main-banner-text {
@@ -775,7 +779,6 @@ h6 {
   /*page-section__usage*/
   .page-section__usage-title {
 	  text-align: center;
-	  padding-left: 20px;
   }
   .page-section__usage-instruction-list {
 	display: flex;
@@ -850,4 +853,9 @@ h6 {
 .contact-form__terms {
     width: 100%;
 }
+}
+@media (min-width: 1920px) {
+  .container {
+    width: calc(1280px + (1960 - 1280) * ((100vw - 1920px) / (2500 - 1920)));
+  }
 }

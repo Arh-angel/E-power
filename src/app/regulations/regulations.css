@@ -181,10 +181,10 @@
 /*=========================================page-section__client-card=======================================*/
 
 .page-section__client-card {
+    position: relative;
     background-color: var(--color-light-green);
 }
 .client-card-position {
-    position: relative;
 }
 .page-section__client-card-title {
     padding-top: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
@@ -195,6 +195,7 @@
 .page-section__client-card-text {
     max-width: calc(300px + (642 - 300) * ((100vw - 320px) / (1920 - 320)));
     margin-right: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
+    z-index: 1;
 }
 .page-section__client-card-text p {
     line-height: 120%;
@@ -205,13 +206,13 @@
 }
 .page-section__client-card-ellipse-one {
     position: absolute;
-    left: -285px;
+    left: 0;
     top: 200px;
 }
 .page-section__client-card-ellipse-two img {
     position: absolute;
     bottom: -60px;
-    right: -240px;
+    right: -100px;
 }
 
 /*adaptive*/
