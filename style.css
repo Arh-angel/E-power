@@ -148,7 +148,7 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: calc(280px + (610 - 280) * ((100vw - 320px) / (1920 - 320)));
+  width: 50%;
   height: 100%;
   margin-bottom: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
   padding: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
@@ -156,12 +156,9 @@ h6 {
   background-color: var(--color-white);
   box-shadow: 1px 2px 6px 1px rgb(0 0 0 / 10%);
 }
-/* .form:first-child {
-  margin-top: calc(10px + (30 - 10) * ((100vw - 320px) / (1920 - 320)));
-} */
-/* .form:last-child {
-  margin-bottom: calc(10px + (30 - 10) * ((100vw - 320px) / (1920 - 320)));
-} */
+.contact-form__field {
+  width: 100%;
+}
 .btn {
   width: 50%;
   height: 60px;
@@ -180,7 +177,7 @@ h6 {
   color: var(--color-black);
   line-height: 28px;
   padding: 15px 20px;
-  width: calc(260px + (536 - 260) * ((100vw - 320px) / (1920 - 320)));
+  width: 100%;
   margin-bottom: 15px;
   transition: background-color 0.25s ease;
 }
@@ -203,7 +200,7 @@ h6 {
   border: 0;
 }
 .contact-form__footer {
-  width: calc(260px + (536 - 260) * ((100vw - 320px) / (1920 - 320)));
+  width: 100%;
 }
 .checkbox__input:checked + .checkbox__text::before {
   background: var(--color-white) url("images/icons/check.svg") no-repeat center
@@ -312,11 +309,12 @@ h6 {
   overflow: hidden;
 }
 .page-section__main-banner-title-btn {
-  max-width: 678px;
+  width: 50%;
+  margin-right: 20px;
   flex-shrink: 0;
 }
 .page-section__main-banner-title {
-  font-size: calc(42px + (100 - 42) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(28px + (98 - 28) * ((100vw - 320px) / (1920 - 320)));
   font-weight: 800;
   letter-spacing: 0.05em;
   line-height: 63%;
@@ -326,13 +324,13 @@ h6 {
   color: var(--color-green);
 }
 .page-section__main-banner-sub-title {
-  font-size: calc(22px + (50 - 22) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(15px + (50 - 15) * ((100vw - 320px) / (1920 - 320)));
   font-weight: 600;
   margin-bottom: calc(40px + (85 - 40) * ((100vw - 320px) / (1920 - 320)));
 }
 .page-section__main-banner-text {
   display: inline-block;
-  width: 450px;
+  width: 390px;
   margin-bottom: 30px;
 }
 .main-banner-btn {
@@ -450,8 +448,8 @@ h6 {
 .page-section__service-ellipse-three {
   position: absolute;
   width: calc(0px + (200 - 0) * ((100vw - 320px) / (1920 - 320)));
-  right: calc(-252px + (85 - -252) * ((100vw - 320px) / (1920 - 320)));
-  bottom: calc(-300px + (0 - -300) * ((100vw - 320px) / (1920 - 320)));
+  right: -100px;
+  bottom: -100px;
 }
 
 /*=========================================page-section__about-company=====================================*/
@@ -488,7 +486,7 @@ h6 {
 .page-section__map {
   margin: 0 auto;
   width: 100%;
-  height: calc(468px + (800 - 468) * ((100vw - 320px) / (1920 - 320)));
+  height: calc(468px + (100em - 468) * ((100vw - 320px) / (1920 - 320)));
 }
 .page-section__map iframe {
   display: block;
@@ -535,11 +533,6 @@ h6 {
   .page-footer__social-network {
     margin-left: 100px;
   }
-
-  /*main-banner*/
-  .page-section__main-banner-title-btn {
-    max-width: 650px;
-  }
 }
 @media (max-width: 1160px) {
   .container {
@@ -555,11 +548,8 @@ h6 {
     font-size: 16px;
   }
   /*main-banner*/
-  .page-section__main-banner-title-btn {
-    max-width: 550px;
-  }
   .page-section__main-banner-text {
-    width: 430px;
+    width: 350px;
   }
   .main-banner-btn {
     width: 300px;
@@ -567,8 +557,13 @@ h6 {
 }
 @media (max-width: 992px) {
 	.btn {
+    width: 100%;
+    margin-bottom: 20px;
 		font-size: 14px;
 	  }
+  .contact-form__terms {
+      width: 100%;
+  }
   /*header*/
   .container {
     width: 747px;
@@ -591,11 +586,8 @@ h6 {
     margin-left: 50px;
   }
   /*main-banner*/
-  .page-section__main-banner-title-btn {
-    max-width: 430px;
-  }
   .page-section__main-banner-text {
-    width: 350px;
+    width: 330px;
     margin-bottom: 20px;
   }
   .main-banner-btn {
@@ -605,6 +597,17 @@ h6 {
   .page-section__service-about {
     padding-top: calc(20px + (40 - 20) * ((100vw - 320px) / (992 - 320)));
     padding-bottom: calc(20px + (40 - 20) * ((100vw - 320px) / (992 - 320)));
+  }
+
+  /*form*/
+  .contact-form__footer {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+  .btn {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -735,21 +738,25 @@ h6 {
     display: none;
   }
    /*main-banner*/
+   .page-section__main-banner {
+     padding: 0 20px;
+   }
    .page-section__container-main-banner-mobile {
 	   flex-direction: column-reverse;
+     align-items: flex-start;
    }
    .page-section__main-banner-title-btn {
-    max-width: 767px;
-	padding: 0 20px;
-	margin-bottom: calc(20px + (40 - 20) * ((100vw - 320px) / (767 - 320)));
+    width: 100%;
+	  margin-bottom: calc(20px + (40 - 20) * ((100vw - 320px) / (767 - 320)));
+    margin-right: 0;
   }
   .page-section__main-banner-title {
-    font-size: calc(42px + (100 - 42) * ((100vw - 320px) / (767 - 320)));
-	margin-top: calc(20px + (40 - 20) * ((100vw - 320px) / (767 - 320)));
+    font-size: calc(40px + (100 - 40) * ((100vw - 320px) / (767 - 320)));
+	  margin-top: calc(20px + (40 - 20) * ((100vw - 320px) / (767 - 320)));
     margin-bottom: calc(20px + (40 - 20) * ((100vw - 320px) / (767 - 320)));
   }
   .page-section__main-banner-sub-title {
-    font-size: calc(22px + (40 - 22) * ((100vw - 320px) / (767 - 320)));
+    font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (767 - 320)));
     margin-bottom: calc(40px + (80 - 40) * ((100vw - 320px) / (767 - 320)));
   }
   .page-section__main-banner-text {
@@ -772,7 +779,6 @@ h6 {
   /*page-section__usage*/
   .page-section__usage-title {
 	  text-align: center;
-	  padding-left: 20px;
   }
   .page-section__usage-instruction-list {
 	display: flex;
@@ -828,5 +834,28 @@ h6 {
   .page-section__about-company-img {
     width: 100%;
     margin-top: 0;
+  }
+
+  /*form*/
+.form {
+    width: 100%;
+}
+.contact-form__field {
+    width: 100%;
+}
+.input-field {
+    width: 100%;
+}
+.btn {
+    width: 100%;
+    margin-right: 0;
+} 
+.contact-form__terms {
+    width: 100%;
+}
+}
+@media (min-width: 1920px) {
+  .container {
+    width: calc(1280px + (1960 - 1280) * ((100vw - 1920px) / (2500 - 1920)));
   }
 }
