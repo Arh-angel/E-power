@@ -167,8 +167,8 @@ top: 15px;
 
 .section-company-faq__content img {
 	position: absolute;
-	bottom: -60px;
-	right: 0;
+	bottom: -100px;
+	right: -15px;
 }
 
 .section-company-faq {
@@ -180,11 +180,13 @@ top: 15px;
 	justify-content: space-between;
 	padding-top: 140px;
 	padding-bottom: 100px;
+	padding-right: 70px;
 }
 
 
 .section-company-faq__title {
 	font-size: 36px;
+	font-weight: 600;
 	line-height: 49px;
 	margin-bottom: 40px;
 }
@@ -192,22 +194,27 @@ top: 15px;
 .section-company-faq__form {
 	padding-left: 32px;
 	padding-right: 32px;
+ 
 }
 
-/* .section-company-faq__text {
+.section-company-faq__text {
 	padding-right: 270px;
-	margin-bottom: 40px;
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 27px;
-} */
+}
+
+section-company-faq__text--small {
+	font-size: 16px;
+	
+}
 
 .section-company-faq__info {
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 27px;
 	margin-bottom: 40px;
-	padding-right: 80px;
+	
 }
 
 .section-company-faq__info:last-child {
@@ -222,6 +229,9 @@ top: 15px;
 @media (max-width: 1400px) {
 	.big {
 		left: -170px;
+	}
+	.section-company-faq__content img {
+		right: 7px;
 	}
 }
 
@@ -254,24 +264,37 @@ top: 15px;
 	.section-company-faq__info:last-child {
 		padding-right: 20px;
 	}
+	.section-company-faq__content img {
+		height: 40px;
+		width: 40px;
+		right: -83px;
+	}
 }
 
 /* media 992 */
 @media (max-width: 992px) {
 	/* section-company */
+			
 	.section-company__poster img {
 		width: 100%;
+		
 	}
 	.section-company__poster {
 		margin-top: 0;
 	}
+		
 	.section-company__mission {
-		left: 7%;
-		top: 10%;
-
+		border: none;
+		left: 0;
+		top: 0;
+		width: 630px;
 	}
+
 	.section-company__poster::before {
-		display: none;
+		top: 0%;
+		width: 80%;
+		height: 37%;
+		background: linear-gradient(rgba(242,245,247, 0.03) 0%, rgba(255,255,255,0.2) 80%);
 	}
 	.section-company {
 		margin-bottom: 30px;
@@ -301,6 +324,9 @@ top: 15px;
 		row-gap: 15px;
 	}
 	/* section-company-faq */
+	.section-company-faq__content img {
+		display: none;
+	}
 	.section-company-faq__title {
 		font-size: 30px;
 	}
@@ -333,9 +359,7 @@ top: 15px;
 /* media 767 */
 @media (max-width: 767px) {
 	/* section-company */
-	.section-company__mission {
-
-	}
+	
 	.section-company {
 		margin-top: 40px;
 		margin-bottom: 0;
