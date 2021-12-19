@@ -856,6 +856,21 @@ h6 {
 }
 @media (min-width: 1920px) {
   .container {
-    width: calc(1280px + (1960 - 1280) * ((100vw - 1920px) / (2500 - 1920)));
+    width: calc(1280px + (1960 - 1280) * ((100vw - 1920px) / (2560 - 1920)));
+  }
+  .mainmenu__item a {
+    font-size: calc(20px + (30 - 20) * ((100vw - 1920px) / (2560 - 1920)));
+  }
+  .mainmenu__item a img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-footer__information-copyright {
+    font-size: calc(14px + (20 - 14) * ((100vw - 1920px) / (2560 - 1920)));
+  }
+  .page-footer__link svg {
+    width: calc(27px + (65 - 27) * ((100vw - 1920px) / (2560 - 1920)));
+    height: calc(26px + (40 - 26) * ((100vw - 1920px) / (2560 - 1920)));
   }
 }
