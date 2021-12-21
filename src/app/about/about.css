@@ -7,7 +7,6 @@
 
 .section-company__poster {
     margin-top: 100px;
-	float: right;
 	position: relative;
 	z-index: 0;
 }
@@ -43,12 +42,12 @@
 
 .section-company__mission p {
 	font-size: 20px;
-	Line-height: 27px
+	line-height: 27px
 }
 
 .section-company__mission span {
 	font-size: 30px;
-	Line-height: 40px;
+	line-height: 40px;
 	color: var(--color-green);
 }
 
@@ -56,6 +55,7 @@
 
 .section-about {
 	background-color: var(--color-light-green);
+	position: relative;
 }
 
 .section-about__wrap {
@@ -90,7 +90,7 @@
 
 .big {
 position: absolute;
-left: -250px;
+left: -190px;
 top: 15px;
 }
 
@@ -167,7 +167,8 @@ top: 15px;
 
 .section-company-faq__content img {
 	position: absolute;
-	top: 450px;
+	bottom: -100px;
+	right: 15px;
 }
 
 .section-company-faq {
@@ -179,11 +180,13 @@ top: 15px;
 	justify-content: space-between;
 	padding-top: 140px;
 	padding-bottom: 100px;
+	padding-right: 70px;
 }
 
 
 .section-company-faq__title {
 	font-size: 36px;
+	font-weight: 600;
 	line-height: 49px;
 	margin-bottom: 40px;
 }
@@ -191,19 +194,317 @@ top: 15px;
 .section-company-faq__form {
 	padding-left: 32px;
 	padding-right: 32px;
+ 
 }
 
 .section-company-faq__text {
 	padding-right: 270px;
-	margin-bottom: 40px;
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 27px;
 }
 
-.section-company-faq__text:last-child {
+section-company-faq__text--small {
+	font-size: 16px;
+	
+}
+
+.section-company-faq__info {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 27px;
+	margin-bottom: 40px;
+	
+}
+
+.section-company-faq__info:last-child {
 	padding-right: 80px;
 	font-size: 16px;
 	margin-bottom: 0;
 
+}
+
+/*adaptive*/
+/* media 1400px */
+@media (max-width: 1400px) {
+	.big {
+		left: -170px;
+	}
+	.section-company-faq__content img {
+		right: 7px;
+	}
+}
+
+/* media 1160px */
+
+@media (max-width: 1160px) {
+	/* section-company */
+	.section-company__poster img {
+		width: 700px;
+	}
+	.section-company__poster {
+		margin-top: 30px;
+	}
+	.section-company__mission {
+		top: 30%;
+	}
+	.section-company__poster::before {
+		top: 10%;
+		width: 55%;
+	}
+	/* section-about */
+	.big {
+		left: -190px;
+	}
+	/* section-pluses */
+	.section-pluses__grid {
+		column-gap: 70px;
+	}
+	/* section-company-faq */
+	.section-company-faq__info:last-child {
+		padding-right: 20px;
+	}
+	.section-company-faq__content img {
+		height: 40px;
+		width: 40px;
+		right: -83px;
+	}
+}
+
+/* media 992 */
+@media (max-width: 992px) {
+	/* section-company */
+			
+	.section-company__poster img {
+		width: 100%;
+		
+	}
+	.section-company__poster {
+		margin-top: 0;
+	}
+		
+	.section-company__mission {
+		border: none;
+		left: 0;
+		top: 0;
+		width: 630px;
+	}
+
+	.section-company__poster::before {
+		top: 0%;
+		width: 80%;
+		height: 37%;
+		background: linear-gradient(rgba(242,245,247, 0.03) 0%, rgba(255,255,255,0.2) 80%);
+	}
+	.section-company {
+		margin-bottom: 30px;
+	}
+	/* section-about */
+	.section-about__content p {
+		padding-right: 80px;
+	}
+	.big {
+		width: 125px;
+		height: 125px;
+		left: -150px;
+	}
+	.small-up {
+		width: 50px;
+		height: 50px;
+		right: -40px;
+	}
+	.small-down {
+		width: 50px;
+		height: 50px;
+		right: 0px;
+	}
+	/* section-pluses */
+	.section-pluses__grid {
+		column-gap: 15px;
+		row-gap: 15px;
+	}
+	/* section-company-faq */
+	.section-company-faq__content img {
+		display: none;
+	}
+	.section-company-faq__title {
+		font-size: 30px;
+	}
+	.section-company-faq__info {
+		font-size: 15px;
+		padding-right: 20px;
+	}
+	.section-company-faq__info:last-child {
+		font-size: 13px;
+	}
+}
+
+/* media 832 */
+@media (max-width: 832px) {
+	.big {
+		display: none;
+	}
+	.small-up {
+		display: none;
+	}
+	.small-down {
+		display: none;
+	}
+	.section-about__content p {
+		padding-right: 0;
+	}
+	.section-company-faq__text {
+		font-size: 16px;
+	}
+
+	.section-company-faq__wrap {
+		padding-top: 50px;
+		flex-direction: column;
+	}
+	
+	.section-company-faq__title {
+		font-size: 24px;
+	}
+	.section-company-faq__form {
+		margin-top: 30px;
+	}
+}
+
+/* media 767 */
+@media (max-width: 767px) {
+	
+	/* section-company */
+	.section-company {
+		margin-top: 40px;
+		margin-bottom: 0;
+	}
+	/* section-about__content */
+	.section-about__content {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	/* section-pluses*/
+	.section-pluses__grid {
+		padding-right: 20px;
+		padding-left: 20px;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+	}
+	/* section-company-faq */
+	.section-company-faq__wrap {
+		flex-direction: column;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.small-el {
+		display: none;
+	}
+
+	.section-company-faq__content {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.section-company-faq__title {
+		margin-bottom: 20px;
+	}
+	.section-company-faq__info {
+		margin-bottom: 10px;
+	}
+	.section-company-faq__info:last-child {
+		margin-bottom: 20px;
+	}
+	.section-company-faq__form {
+		width: 95%;
+		margin-right: auto;
+		margin-left: auto;
+		
+	}
+	.section-company-faq__form-wrap {
+		width: 100%;
+		
+	}
+	.section-company-faq__form-wrap input {
+		width: 100%;
+	}
+	.section-company-faq__form-footer {
+		display: block;
+		width: 100%;
+	}
+	.section-company-faq__form-footer button {
+		width: 100%;
+	}
+	.section-company-faq__form-footer label {
+		margin-top: 20px;
+	}
+}
+/* media 735 */
+@media (max-width: 735px) {
+	.section-company__poster::before {
+		background: none;
+	}
+}
+
+/* media 600 */
+@media (max-width: 600px) {
+	.section-company__mission {
+		width: 75%;
+	}
+	.section-company__poster::before {
+		background: var(--color-white);
+		opacity: 0.4;
+		width: 100%;
+		height: 100%;
+	}
+	.section-company-faq__text {
+		padding-right: 0;
+	}
+}
+
+/* media 520 */
+@media (max-width: 520px) {
+	.section-pluses__grid {
+		display: block;
+	}
+	.section-pluses__content {
+		width: 75%;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+}
+
+/* media 470 */
+@media (max-width: 470px) {
+	.section-company__mission {
+		width: 97%;
+	}
+	.section-company__poster::before {
+		opacity: 0.6;
+	}
+}
+
+/* media 420 */
+@media (max-width: 420px) {
+	.section-company__mission p {
+		font-size: 14px;
+	}
+	.section-about__content p {
+		font-size: 16px;
+	}
+	.section-company__mission span {
+		font-size: 20px;
+	}
+}
+/* media 370 */
+@media (max-width: 370px) {
+	.section-company__mission {
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 0;
+	}
+	.section-pluses__content {
+		width: auto;
+	}
+	.section-about__content p:last-child {
+		padding-bottom: 30px;
+	}
 }
