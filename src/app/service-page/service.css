@@ -1,0 +1,186 @@
+/*page-section__service*/
+
+.page-section__help-service-container {
+}
+.page-section__help-service-title-text {
+    width: calc(300px + (640 - 300) * ((100vw - 320px) / (1920 - 320)));
+    margin-top: calc(0px + (160 - 0) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
+    flex-shrink: 0;
+}
+.page-section__help-service-text p {
+    margin-top: calc(20px + (37 - 20) * ((100vw - 320px) / (1920 - 320)));
+    line-height: 130%;
+}
+.page-section__help-service-img {
+    margin-top: calc(70px + (160 - 70) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
+}
+.page-section__help-service-img img {
+    display: block;
+    width: 100%;
+}
+
+/* page-section__mode */
+
+.page-section__mode {
+    background-color: var(--color-light-green);
+}
+.page-section__mode-img {
+    margin-top: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
+}
+.page-section__mode-img img {
+    display: block;
+    width: 100%;
+}
+.page-section__mode-title-text {
+    width: 50%;
+    margin-top: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
+    flex-shrink: 0;
+}
+.page-section__mode-title {
+}
+.page-section__mode-text p {
+    margin-top: calc(20px + (37 - 20) * ((100vw - 320px) / (1920 - 320)));
+    line-height: 130%;
+}
+.page-section__mode-text p span {
+    color: var(--color-green);
+}
+
+/* page-section__faq */
+
+.page-section__faq {
+}
+.page-section__faq-title {
+    margin-top: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
+}
+.page-section__faq-list {
+    margin-bottom: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
+}
+.page-section__faq-item {
+    margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
+    border: 2px solid var(--color-green);
+}
+.page-section__faq-item:last-child {
+    margin-bottom: 0;
+}
+.page-section__faq-item.is-open .page-section__faq-item-text {
+    max-height: 120px;
+    margin-bottom: calc(10px + (14 - 10) * ((100vw - 320px) / (1920 - 320)));
+    opacity: 1;
+}
+.page-section__faq-item.is-open .page-section__faq-item-icon {
+    transform: rotate(45deg);
+}
+.page-section__faq-item-title-open-close-icon {
+}
+.page-section__faq-item-title {
+    margin: 10px;
+    font-size: calc(14px + (26 - 14) * ((100vw - 320px) / (1920 - 320)));
+}
+.page-section__faq-item-icon {
+    margin: 10px;
+    transition: 0.2s linear;
+}
+.page-section__faq-item-text {
+    margin-left: 10px;
+    margin-right: 40px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1920 - 320)));
+    line-height: 150%;
+    transition: max-height 0.2s linear, opacity 0.2s linear;
+}
+
+/*page-section__feedback*/
+
+.page-section__feedback {
+    background-color: var(--color-light-green);
+}
+.page-section__feedback-container {
+}
+.page-section__feedback-contact-form {
+}
+.page-section__feedback-contact {
+    width: calc(50% - 20px);
+    margin-bottom: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
+}
+.page-section__feedback-contact-title {
+    margin-top: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: calc(20px + (100 - 20) * ((100vw - 320px) / (1920 - 320)));
+}
+.page-section__feedback-contact-text {
+    line-height: 130%;
+}
+.page-section__feedback-contact-text-linck {
+}
+.form-service {
+    margin-top: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
+}
+.input-field-textarea {
+    height: 145px;
+    resize: none;
+}
+
+/*adaptive*/
+@media (max-width:992px) {
+
+}
+@media (max-width:767px) {
+
+    /*page-section__help-service*/
+
+    .page-section__help-service {
+        padding: 0 20px;
+    }
+    .page-section__help-service-container {
+        flex-direction: column-reverse;
+    }
+    .page-section__help-service-title-text {
+        width: 100%;
+    }
+    .page-section__help-service-img {
+        width: 100%;
+    }
+
+    /*page-section__mode*/
+
+    .page-section__mode {
+        padding: 0 20px;
+    }
+    .page-section__mode-container {
+        flex-direction: column-reverse;
+    }
+    .page-section__mode-img {
+        width: 100%;
+    }
+    .page-section__mode-title-text {
+        margin-top: calc(20px + (30 - 20) * ((100vw - 320px) / (767 - 320)));
+        width: 100%;
+    }
+
+    /* page-section__faq */
+
+    .page-section__faq {
+        padding: 0 20px;
+    }
+
+    /* page-section__feedback */
+
+    .page-section__feedback {
+        padding: 0 20px;
+    }
+    .page-section__feedback-contact-form {
+        flex-direction: column;
+    }
+    .page-section__feedback-contact {
+        width: 100%;
+        margin-top: calc(20px + (30 - 20) * ((100vw - 320px) / (767 - 320)));
+        margin-bottom: calc(0px + (20 - 0) * ((100vw - 320px) / (767 - 320)));
+    }
+}
