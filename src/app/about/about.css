@@ -227,13 +227,60 @@ section-company-faq__text--small {
 }
 
 /*adaptive*/
-/* media 2500px */
-@media (max-width: 2500px) {
-	.section-company__wrap {
-		justify-content: center;
-	}
+/* media 1960px */
+@media (min-width: 1960px) {
+		
 	.section-company__mission {
-		left: 8%;
+       left: 3%;		
+	}
+}
+/* media 2000px */
+@media (min-width: 2000px) {
+		
+	.section-company__mission {
+       left: 4%;		
+	}
+	.section-company__poster {
+		right: 4%;
+	}
+
+}
+/* media 2080px */
+@media (min-width: 2080px) {
+	.section-company__mission {
+		left: 5%;
+	}
+	.section-company__poster {
+		right: 5%;
+	}
+}
+/* media 2180px */
+@media (min-width: 2180px) {
+	.section-company__mission {
+		left: 9%;
+	}
+	.section-company__poster {
+		right: 9%;
+	}
+}
+/* media 2280px */
+@media (min-width: 2280px) {
+	.section-company__mission {
+		left: 12%;
+	}
+	.section-company__poster {
+		right: 12%;
+	}
+}
+/* media 2400px */	
+
+@media (min-width: 2400px) {
+		
+	.section-company__mission {
+       left: 14%;		
+	}
+	.section-company__poster {
+		right: 14%;
 	}
 }
 /* media 1400px */
