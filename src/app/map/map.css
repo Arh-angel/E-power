@@ -150,14 +150,18 @@
     font-size: 20px;
 }
 
+/* map-google */
+
 .map-google {
     margin: 0 auto;
     width: 100%;
+    height: calc(468px + (800 - 468) * ((100vw - 320px) / (1920 - 320)));
 }
 
 .map-google iframe {
     display: block;
     width: 100%;
+    height: 100%;
 }
 
 
