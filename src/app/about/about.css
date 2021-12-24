@@ -227,6 +227,15 @@ section-company-faq__text--small {
 }
 
 /*adaptive*/
+/* media 2500px */
+@media (max-width: 2500px) {
+	.section-company__wrap {
+		justify-content: center;
+	}
+	.section-company__mission {
+		left: 8%;
+	}
+}
 /* media 1400px */
 @media (max-width: 1400px) {
 	.big {
@@ -260,8 +269,11 @@ section-company-faq__text--small {
 		column-gap: 70px;
 	}
 	/* section-company-faq */
+	.section-company-faq__text {
+		padding-right: 50px;
+	}
 	.section-company-faq__info:last-child {
-		padding-right: 20px;
+		padding-right: 30px;
 	}
 	.section-company-faq__content img {
 		height: 40px;
@@ -366,7 +378,7 @@ section-company-faq__text--small {
 		width: 100%;
 	}
 	.section-company-faq__form {
-		width: 80%;
+		width: 100%;
 	}
 	
 	.section-company-faq__title {
